@@ -1,32 +1,34 @@
 name: My First Github Action Atique
 
-on: push
-
+on:
+ push:
+  branches:
+    - main
+ pull_request:
+   branches:
+     - main  
 jobs:
- job1: 
+ build: 
   runs-on: ubuntu-latest
   steps:
    - name: Welcome All
-     run: echo "Heloo Muhamamd, Job1 is running."
-  
+     run: echo "CI Pipeline running for PR."
    - name: Show DATE
      run: date
 
    - name: Show Linux Version
      run: uname -aaa
      
- job2:
-   needs: job1
-   if: always()
+ test:
    runs-on: ubuntu-24.04
    steps:
-   - name: Second Job Not Welcome All
-     run: echo " job 2 is running."
+   - name: Run Tests
+     run: echo " Tests are running."
 
    - name: Show DATE
      run: date
 
-   - name: Show Linux Version
+   - name: Show Linux info
      run: uname -a
      
    
