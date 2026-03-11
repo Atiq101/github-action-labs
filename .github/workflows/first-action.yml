@@ -16,7 +16,6 @@ jobs:
      run: uname -a
      
  job2:
-  needs: job1
   runs-on: ubuntu-24.04
   steps:
    - name: Second Job Not Welcome All
