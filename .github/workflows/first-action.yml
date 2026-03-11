@@ -5,12 +5,12 @@ on: push
 jobs:
  job1: 
   runs-on: ubuntu-latest
-  step:
+  steps:
    - name: Welcome All
      run: echo "Heloo Muhamamd, Job1 is running."
   
    - name: Show DATE
-     run: date
+     run: datee
 
    - name: Show Linux Version
      run: uname -aaa
