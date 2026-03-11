@@ -8,7 +8,7 @@ jobs:
 
   steps:
    - name: Welcome Everyone to my WORLD
-     run: echo "Heloo Muhamamd, how are you !! First GITHUB ACTION RUNNING Testing"
+     run: echo "Heloo Muhamamd, how are you !! First GITHUB ACTION RUNNING "
      
    - name: Show DATE
      run: date
