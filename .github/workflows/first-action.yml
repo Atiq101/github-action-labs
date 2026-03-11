@@ -12,7 +12,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: Welcome All
-     run: echo "CI Pipeline running for PRRR."
+     run: echo "CI Pipeline running for PTR."
    - name: Show DATE
      run: date
 
