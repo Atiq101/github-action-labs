@@ -1,6 +1,6 @@
 name: My First Github Action Atique
 
-on: workflow_dispatch
+on: push
 
 jobs:
  hello-job:
@@ -8,7 +8,7 @@ jobs:
 
   steps:
    - name: Welcome Everyone to my WORLD
-     run: echo "Heloo Muhamamd, how are you !! First GITHUB ACTION RUNNING"
+     run: echo "Heloo Muhamamd, how are you !! First GITHUB ACTION RUNNING Testing"
      
    - name: Show DATE
      run: date
