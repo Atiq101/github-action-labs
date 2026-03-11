@@ -10,7 +10,7 @@ jobs:
      run: echo "Heloo Muhamamd, Job1 is running."
   
    - name: Show DATE
-     run: datee
+     run: date
 
    - name: Show Linux Version
      run: uname -aaa
