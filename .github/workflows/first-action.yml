@@ -3,17 +3,28 @@ name: My First Github Action Atique
 on: push
 
 jobs:
- hello-job:
+ job1: 
   runs-on: ubuntu-latest
-
   steps:
-   - name: Welcome Everyone to my WORLD
-     run: echo "Heloo Muhamamd, how are you !! First GITHUB ACTION RUNNING "
-     
+   - name: Welcome All
+     run: echo "Heloo Muhamamd, Job1 is running."
+  
    - name: Show DATE
      run: date
 
    - name: Show Linux Version
-     run: uname -a 
+     run: uname -a
+     
+ job2:
+  runs-on: ubuntu-24.04
+  steps:
+   - name: Second Job Not Welcome All
+     run: echo " job 2 is running."
 
+   - name: Show DATE
+     run: date
+
+   - name: Show Linux Version
+     run: uname -a
+     
    
