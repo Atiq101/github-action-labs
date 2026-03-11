@@ -5,7 +5,7 @@ on: push
 jobs:
  job1: 
   runs-on: ubuntu-latest
-  step:
+  steps:
    - name: Welcome All
      run: echo "Heloo Muhamamd, Job1 is running."
   
