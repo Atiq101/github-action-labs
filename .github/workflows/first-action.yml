@@ -1,0 +1,19 @@
+name: My First Github Action Atique
+
+on: workflow_dispatch
+
+jobs:
+ hello-job:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: Welcome Everyone to my WORLD
+     run: echo "Heloo Muhamamd, how are you !! First GITHUB ACTION RUNNING"
+     
+   - name: Show DATE
+     run: date
+
+   - name: Show Linux Version
+     run: uname -a 
+
+   
